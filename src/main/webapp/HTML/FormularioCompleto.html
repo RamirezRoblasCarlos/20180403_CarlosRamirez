@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario Completo</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/formulariocss.css" media="all" />
+    </head>
+
+    <body id="bodyForm">
+        <form id="formulario" action="../FormularioCompleto" method="post">
+            <fieldset>
+                <legend>Formulario completo</legend>
+                <label>Nombre</label>
+                <input  name="Nombre" type="text" value=""/>
+                </br>
+                
+                <label>Password</label>
+                <input  name="Password" type="password" value=""/>
+                
+                </br>
+                </br>
+                <label>Vehiculo</label>
+                <input type="checkbox" name="Vehiculo" value="Moto">Moto
+                <input type="checkbox" name="Vehiculo" value="Coche" >Coche
+                <input type="checkbox" name="Vehiculo" value="Bicicleta">Bicicleta
+                </br>
+                </br>
+                <label>Comida:</label>
+                <select name="Comida">
+                    <option value="Tortilla">Tortilla</option>
+                    <option value="Lentejas">Lentejas</option>
+                    <option value="Migas">Migas</option>
+                    <option value="Helado">Helado</option>
+                    <option value="Pasta">Pasta</option>
+                </select>
+                </br> 
+                </br>
+                <label>Bebidas(Pulse control para seleccionar mas de una)</label></br>
+                <SELECT name="Bebidas" size="6" MULTIPLE> 
+                    <OPTION VALUE="Cerveza">Cerveza</OPTION> 
+                    <OPTION VALUE="Vino">Vino</OPTION> 
+                    <OPTION VALUE="Fanta">Fanta</OPTION> 
+                    <OPTION VALUE="Agua">Agua</OPTION> 
+                    <OPTION VALUE="Coca-cola">Coca-cola</OPTION> 
+                    <OPTION VALUE="Zumo">Zumo</OPTION> 
+                </SELECT>
+                </br>
+                
+                </br>
+                <label>Comentarios</label>
+                </br>
+                <textarea name="texto" rows="4" cols="50">
+
+Escribe aqui para comentar
+                </textarea>
+                </br>     
+
+            </fieldset>
+            <input  name="enviar" type="submit" value="Enviar" />
+            <input  type="reset" value="Borrar informacion">
+        </form>
+    </body>
+</html>
