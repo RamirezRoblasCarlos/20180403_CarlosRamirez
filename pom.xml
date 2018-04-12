@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>es.albarregas</groupId>
-    <artifactId>180407_CarlosRamirezRoblas</artifactId>
+    <artifactId>20180403_CarlosRamirezRoblas</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>180407_CarlosRamirezRoblas</name>
+    <name>20180403_CarlosRamirezRoblas</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

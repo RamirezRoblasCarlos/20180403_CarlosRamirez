@@ -134,14 +134,14 @@ public class FormularioCompletoValidaciones extends HttpServlet {
             String key = entry.getKey();
             String[] value = entry.getValue();
 
-            if (key.equalsIgnoreCase("Enviar")) {
-
-            } if(errorCheckbox){
+            if(errorCheckbox){
               nombreError += "<li>Vehiculo</li></br>";
             } 
             if (error || errorCheckbox) {
                 out.println(nombreError);
                 break;
+            } else if (key.equalsIgnoreCase("Enviar")) {
+
             } else if (value.length > 1) {
 
                 out.println("La lista de  " + key + " :</br>");

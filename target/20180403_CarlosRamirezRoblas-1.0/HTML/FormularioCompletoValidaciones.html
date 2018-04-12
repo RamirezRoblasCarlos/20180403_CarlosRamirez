@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario Completo</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/formulariocss.css" media="all" />
+    </head>
+
+    <body id="bodyForm">
+        <form id="formulario" action="../FormularioCompletoValidaciones" method="post">
+            <fieldset>
+                <legend>Formulario completo con validaciones</legend>
+                <label>Nombre</label>
+                <input  name="Nombre" type="text" value=""/>
+                </br>
+                
+                <label>Telefono</label>
+                <input  name="Telefono" type="text" value=""/>
+                </br>
+                
+                <label>Correo Electronico</label>
+                <input  name="Correo" type="text" value=""/>
+                </br>
+                
+                <label>Fecha</label>
+                <input  name="Fecha" type="text" value=""/>
+                </br>
+                </br>
+                
+                <label>Vehiculo</label>
+                <input type="checkbox" name="Vehiculo" value="Moto">Moto
+                <input type="checkbox" name="Vehiculo" value="Coche" >Coche
+                <input type="checkbox" name="Vehiculo" value="Bicicleta">Bicicleta
+                </br>
+                </br>
+
+            </fieldset>
+            <input  name="enviar" type="submit" value="Enviar" />
+            <input  type="reset" value="Borrar informacion">
+        </form>
+    </body>
+</html>

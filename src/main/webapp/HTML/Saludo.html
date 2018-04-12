@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor. 12 - 9 Buenas tardes 9-8 buenas noches 8-12 buenos dias
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/formulariocss.css" media="all" />
+    </head>
+    <body>
+        <form id="formulario" action="../JSP/Saludo.jsp" method="post">
+            <fieldset>
+        <legend>Formulario</legend>
+                <label>Nombre</label>
+                <input name="nombre" type="text" required/>
+                </br>
+                <label>Genero: </label>
+                <input type="radio" name="sexo" value="hombre" checked>Masculino
+                <input type="radio" name="sexo" value="mujer">Femenino
+                </br>
+                <input id="boton" name="enviar" type="submit" value="Enviar" />
+            </fieldset>
+        </form>
+    </body>
+</html>

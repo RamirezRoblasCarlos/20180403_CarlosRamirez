@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/formulariocss.css" media="all" />
+    </head>
+
+    <body id="bodyForm">
+        <form id="formulario" action="../FormularioCheck" method="post">
+            <fieldset>
+                <legend>Formulario con check</legend>
+                <label>*Nombre</label>
+                <input id="nombre" name="nombre" type="text" />
+                </br>
+                <label>*Apellidos</label>
+                <input id="apellidos" name="apellidos" type="text" />
+                </br>
+                <label>*Usuario</label>
+                <input id="usuario" name="usuario" type="text" />
+                </br>
+                <label>*Password</label>
+                <input id="password" name="password" type="text" />
+                </br>
+                <label>*Fecha de nacimiento :</label>
+                <input id="fecha" name="fecha" type="text" placeholder="Formato(DD/MM/YYYY)"/>
+                </br>
+                <label>*Telefono :</label>
+                <input id="tlf" name="tlf" type="text" placeholder="Formato(9-8-7-6)+8digitos"/>
+                </br>
+                <label>*Tipo de documento</label>
+                <select name="documento">
+                    <option value="Nif">Nif</option>
+                    <option value="Nie">Nie</option>
+                    <option value="Pasaporte">Numero de pasaporte</option>
+                </select>
+                </br>
+                <input name="nDocumento" type="text" placeholder="Numero de su identificacion"/>
+                </br>
+                <label>Preferencias</label></br>                           
+                <input type="checkbox" name="Deporte" value="Deporte">Deporte</br>
+                <input type="checkbox" name="Lectura" value="Lectura" >Lectura</br>
+                <input type="checkbox" name="Cine" value="Cine">Cine</br>
+                <input type="checkbox" name="Viajes" value="Viajes" >Viajes</br>  
+
+            </fieldset>
+            <input id="Enviar" name="enviar" formaction="../FormularioCheck" type="submit" value="Enviar" />
+            <input type="submit" value="Borrar" formaction="FormularioCheck.html" />
+
+        </form>
+    </body>
+</html>
