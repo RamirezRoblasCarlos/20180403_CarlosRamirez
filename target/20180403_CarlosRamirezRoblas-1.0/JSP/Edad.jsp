@@ -42,17 +42,27 @@
            
            if(!error){
            
+               
+               
                if(Integer.parseInt(cadena[1])>mes){
                year+=-1;
                }
-               salida+="Tienes "+ (year-Integer.parseInt(cadena[0]))+" años, ";
                
-               if(Integer.parseInt(cadena[1])<=mes){
+               if(Integer.parseInt(cadena[0])==year){
+                   salida+="Tienes ";
+               }else{
+                 salida+="Tienes "+ (year-Integer.parseInt(cadena[0]))+" años  ";
+               }
+               
+               if(Integer.parseInt(cadena[1])==mes){
+                   
+                   } else if(Integer.parseInt(cadena[1])<=mes){
                    salida+=Math.abs(Integer.parseInt(cadena[1])-mes)+" meses, ";
                    }else{
-               salida+=Math.abs(mes -Integer.parseInt(cadena[1]))+" meses, ";
+               salida+=Math.abs(mes -Integer.parseInt(cadena[1]))+" meses ";
                }
-               if(Integer.parseInt(cadena[2])<=dia){
+               if(Integer.parseInt(cadena[2])==dia){
+               }else if(Integer.parseInt(cadena[2])<=dia){
                    salida+=Math.abs(Integer.parseInt(cadena[2])-dia)+" dias.";
                }else{
                    salida+=Math.abs(dia -Integer.parseInt(cadena[2]))+" dias.";

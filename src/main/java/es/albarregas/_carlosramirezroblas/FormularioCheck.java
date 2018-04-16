@@ -351,6 +351,7 @@ public class FormularioCheck extends HttpServlet {
             } else {
                 Enumeration<String> parametros = request.getParameterNames();
                 int pref = 0;
+                out.println("<div id=");
                 while (parametros.hasMoreElements()) {
                     String elemento = parametros.nextElement();
                     String valor = request.getParameter(elemento);
